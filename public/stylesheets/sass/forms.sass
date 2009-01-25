@@ -13,15 +13,24 @@ form
     :margin= (!line_height/1.4em) 0
   label
     :font-weight bold
-    :line-height= !line_height
     :margin= 0 0 (-(!line_height/1.4em))
   input[type="checkbox"]
     :display inline-block
   input[type="submit"],
   input[type="button"]
     :height= !line_height
-legend
-  :color #000
+
+fieldset
+  :margin 1em 0 1.5em -2.5em
+  :padding 1.5em
+  :border 1px solid #ccc
+  legend
+    :font-size 1.4em
+    :font-weight bold
+    :margin= -(!line_height/1.4em) 0
+  fieldset
+    :margin 1.5em
+
 form.justify
   fieldset
     :margin 1em 0 1.5em -2.5em

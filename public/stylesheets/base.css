@@ -113,7 +113,6 @@ form {
     margin: 1.28571428571429em 0; }
   form label {
     font-weight: bold;
-    line-height: 1.8em;
     margin: 0 0 -1.28571428571429em; }
   form input[type="checkbox"] {
     display: inline-block; }
@@ -121,8 +120,16 @@ form {
   form input[type="button"] {
     height: 1.8em; }
 
-legend {
-  color: #000; }
+fieldset {
+  margin: 1em 0 1.5em -2.5em;
+  padding: 1.5em;
+  border: 1px solid #ccc; }
+  fieldset legend {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: -1.28571428571429em 0; }
+  fieldset fieldset {
+    margin: 1.5em; }
 
 form.justify fieldset {
   margin: 1em 0 1.5em -2.5em;
