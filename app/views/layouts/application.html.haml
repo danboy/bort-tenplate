@@ -14,7 +14,8 @@
     /[if lt IE 8]
       = javascript_include_tag "http://ie7-js.googlecode.com/svn/version/2.0(beta3)/IE8.js" , :cache => false
   %body{:class => "#{yield :body_class}" }
-    #notices= flash_messages
+    - if flash
+      #notices= flash_messages
     #canvas
       %ul
         -if logged_in?

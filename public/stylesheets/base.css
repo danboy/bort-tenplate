@@ -94,6 +94,18 @@ body {
       margin: 0;
       padding: 0;
       display: inline-block; }
+  body #notices {
+    width: auto;
+    background-color: #DDD;
+    font-size: 1.6em;
+    padding: 0 0 .5em; }
+    body #notices .flash-notice {
+      padding: 1em;
+      background-color: #90ee90; }
+    body #notices .flash-error {
+      background-color: #b73b29;
+      color: #333;
+      padding: 1em; }
   body #canvas {
     width: 96em;
     margin: 0 auto; }
