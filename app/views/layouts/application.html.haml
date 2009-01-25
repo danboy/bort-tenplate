@@ -16,12 +16,12 @@
   %body{:class => "#{yield :body_class}" }
     #notices= flash_messages
     #canvas
-    %ul
-      -if logged_in?
-        %li= link_to 'Logout', logout_path
-      -else
-        %li= link_to 'Login', login_path
-        %li= link_to 'Signup', signup_path
+      %ul
+        -if logged_in?
+          %li= link_to 'Logout', logout_path
+        -else
+          %li= link_to 'Login', login_path
+          %li= link_to 'Signup', signup_path
       = yield
 
     = javascript_include_tag :all, :cache => false
