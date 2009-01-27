@@ -12,7 +12,7 @@ on line 10 of /home/dan/Projects/tenplate/www/public/stylesheets/sass/forms.sass
 13:     :border= .1em solid !link_color
 14:   label
 15:     :font-weight bold
-16:     :margin= 0 0 (-(!line_height/1.4em))
+16:     :font-size 1.4em
 
 
 Backtrace:
@@ -68,4 +68,4 @@ script/server:3
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Sass::SyntaxError: Undefined constant: \"!line_height\".\A on line 10 of /home/dan/Projects/tenplate/www/public/stylesheets/sass/forms.sass\A \A 6:   textarea,\A 7:   select\A 8:     :font-family inherit\A 9:     :font-size 1.2em\A 10:     :height= !line_height-.2em\A 11:     :font-weight inherit\A 12:     :margin= (!line_height/1.4em) 0\A 13:     :border= .1em solid !link_color\A 14:   label\A 15:     :font-weight bold\A 16:     :margin= 0 0 (-(!line_height/1.4em))\A "; }
+  content: "Sass::SyntaxError: Undefined constant: \"!line_height\".\A on line 10 of /home/dan/Projects/tenplate/www/public/stylesheets/sass/forms.sass\A \A 6:   textarea,\A 7:   select\A 8:     :font-family inherit\A 9:     :font-size 1.2em\A 10:     :height= !line_height-.2em\A 11:     :font-weight inherit\A 12:     :margin= (!line_height/1.4em) 0\A 13:     :border= .1em solid !link_color\A 14:   label\A 15:     :font-weight bold\A 16:     :font-size 1.4em\A "; }

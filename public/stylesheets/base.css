@@ -132,7 +132,13 @@ form {
     border: 0.1em solid #336699; }
   form label {
     font-weight: bold;
+    font-size: 1.4em;
+    clear: both;
+    display: block;
     margin: 0 0 -1.28571428571429em; }
+  form label.checkbox {
+    display: inline-block;
+    margin: 1.28571428571429em 0; }
   form input[type="checkbox"] {
     display: inline-block; }
   form input[type="submit"],
@@ -141,7 +147,7 @@ form {
 
 fieldset {
   margin: 1.28571428571429em 0 1.28571428571429em -1.5em;
-  padding: 1.8em;
+  padding: 0 1.8em;
   border: 1px solid #ccc; }
   fieldset legend {
     font-size: 1.4em;
@@ -205,12 +211,7 @@ form.justify select {
 ul li label,
 ol li label {
   width: auto;
-  font-size: 1em;
-  clear: both;
-  display: block; }
-ul li input,
-ol li input {
-  margin-left: 0%; }
+  font-size: 1em; }
 
 div .multi_select,
 div .read_only {

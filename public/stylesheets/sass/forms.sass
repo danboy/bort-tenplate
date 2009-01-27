@@ -13,7 +13,13 @@ form
     :border= .1em solid !link_color
   label
     :font-weight bold
+    :font-size 1.4em
+    :clear both
+    :display block
     :margin= 0 0 (-(!line_height/1.4em))
+  label.checkbox
+    :display inline-block
+    :margin= (!line_height/1.4em) 0
   input[type="checkbox"]
     :display inline-block
   input[type="submit"],
@@ -22,7 +28,7 @@ form
 
 fieldset
   :margin= (!line_height/1.4em) 0 (!line_height/1.4em) (-1.5em)
-  :padding= !line_height
+  :padding= 0 !line_height
   :border 1px solid #ccc
   legend
     :font-size 1.4em
@@ -93,10 +99,7 @@ ol
     label
       :width auto
       :font-size 1em
-      :clear both
-      :display block
-    input
-      :margin-left 0%
+
 div
   .multi_select,
   .read_only
