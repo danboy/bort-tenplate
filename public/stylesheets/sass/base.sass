@@ -9,7 +9,6 @@ html
   :color= !font_color
   :background = !page_color
   :font-size 16px
-
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td
   :margin 0
   :padding 0
@@ -32,7 +31,7 @@ caption, th
   :text-align left
 
 h1,h2,h3,h4,h5,h6
-  :font-size 100%
+  :font-size inherit
   :font-weight normal
 
 q:before, q:after
@@ -82,7 +81,9 @@ body
   ol
     :display block
     :font-size 1.4em
-    :margin= !line_height/1.4em 0
+    :margin 0
+    li
+      :margin= !line_height/1.4em 0
   pre.example
     :border 1px solid #900
     :background #333
@@ -101,19 +102,22 @@ body
       :display inline-block
   #notices
     :width auto
-    :background-color #DDD
+    :background-color #FFE6D4
     :font-size 1.6em
-    :padding 0 0 .5em
+    :padding 0
+    :border-bottom 1px solid #999
     .flash-notice
       :padding 1em
       :background-color #90ee90
+      :color #666
     .flash-error
       :background-color #b73b29
-      :color #333
+      :color #DDD
       :padding 1em
   #canvas
     :width= !grid_width
     :margin 0 auto
+    :background url(/images/grid.png)
 
 @import forms.sass
 @import grid.sass
