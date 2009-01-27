@@ -1,3 +1,4 @@
+!one_column ||= (!grid_width/1.6180339887498948482em)
 body.one_column
   #canvas
     .column
@@ -24,3 +25,10 @@ body.thirds
       :float left
       &.right
         :margin-left 1em
+body.golden
+  .main
+    :width= !one_column-(!line_height*2)
+    :padding= !line_height
+  .rail
+    :width= (!grid_width-!one_column)-(!line_height*2)
+    :padding= !line_height

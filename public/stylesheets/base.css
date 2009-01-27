@@ -1,243 +1,77 @@
-html {
-  color: #333333;
-  background: #ffffff;
-  font-size: 16px; }
+/*
+Sass::SyntaxError: Invalid constant: "!one column = !page_width/1.6180339887498948482em".
+on line 1 of /home/dan/Projects/tenplate/www/public/stylesheets/sass/grid.sass
 
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
-  margin: 0;
-  padding: 0; }
+1: !one column = !page_width/1.6180339887498948482em
+2: body.one_column
+3:   #canvas
+4:     .column
+5:       :width= !grid_width -4em
+6:       :padding 2em
+7: 
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
 
-fieldset, img {
-  border: 0; }
-
-address, caption, cite, code, dfn, em, strong, th, var {
-  style: normal;
-  weight: normal; }
-
-li {
-  list-style: none; }
-
-caption, th {
-  text-align: left; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-size: inherit;
-  font-weight: normal; }
-
-q:before, q:after {
-  content: ''; }
-
-abbr, acronym {
-  border: 0;
-  font-variant: normal; }
-
-sup {
-  vertical-align: text-top; }
-
-sub {
-  vertical-align: text-bottom; }
-
-a {
-  outline: none;
-  color: #336699;
-  text-decoration: none; }
-
-a:hover {
-  text-decoration: underline; }
-
-body {
-  font-size: 62.5%;
-  color: #333333;
-  font-family: helvetica,arial,sans-serif;
-  line-height: 1.8em; }
-  body h1,
-  body h2,
-  body h3,
-  body h4 {
-    font-weight: bold; }
-  body h1 {
-    font-size: 2em;
-    margin-bottom: 0.9em; }
-  body h2 {
-    font-size: 1.8em;
-    margin-bottom: 1em; }
-  body h3 {
-    font-size: 1.6em;
-    margin-bottom: -1.125em; }
-  body h4 {
-    font-size: 1.4em;
-    margin-top: 1.28571428571429em;
-    margin-bottom: -1.28571428571429em; }
-  body p,
-  body ul,
-  body ol {
-    display: block;
-    font-size: 1.4em;
-    margin: 0; }
-    body p li,
-    body ul li,
-    body ol li {
-      margin: 1.28571428571429em 0; }
-  body pre.example {
-    border: 1px solid #900;
-    background: #333;
-    color: #EEE;
-    font-size: 1.4em;
-    margin: 1.18571428571429em 0;
-    display: block;
-    white-space: pre-wrap;       /* css-3 */;
-    white-space: -moz-pre-wrap  /* Mozilla, since 1999 */;
-    white-space: -pre-wrap      /* Opera 4-6 */;
-    white-space: -o-pre-wrap    /* Opera 7 */;
-    word-wrap: break-word       /* Internet Explorer 5.5+ */; }
-    body pre.example code {
-      margin: 0;
-      padding: 0;
-      display: inline-block; }
-  body #notices {
-    width: auto;
-    background-color: #FFE6D4;
-    font-size: 1.6em;
-    padding: 0;
-    border-bottom: 1px solid #999; }
-    body #notices .flash-notice {
-      padding: 1em;
-      background-color: #90ee90;
-      color: #666; }
-    body #notices .flash-error {
-      background-color: #b73b29;
-      color: #DDD;
-      padding: 1em; }
-  body #canvas {
-    width: 96em;
-    margin: 0 auto;
-    background: url(/images/grid.png); }
-
-form {
-  font-size: 1em;
-  text-align: left;
-  padding: 0 1.5em; }
-  form input,
-  form textarea,
-  form select {
-    font-family: inherit;
-    font-size: 1.2em;
-    height: 1.6em;
-    font-weight: inherit;
-    margin: 1.28571428571429em 0;
-    border: 0.1em solid #336699; }
-  form label {
-    font-weight: bold;
-    font-size: 1.4em;
-    clear: both;
-    display: block;
-    margin: 0 0 -1.28571428571429em; }
-  form label.checkbox {
-    display: inline-block;
-    margin: 1.28571428571429em 0; }
-  form input[type="checkbox"] {
-    display: inline-block; }
-  form input[type="submit"],
-  form input[type="button"] {
-    height: 1.8em; }
-
-fieldset {
-  margin: 1.28571428571429em 0 1.28571428571429em -1.5em;
-  padding: 0 1.8em;
-  border: 1px solid #ccc; }
-  fieldset legend {
-    font-size: 1.4em;
-    font-weight: bold; }
-  fieldset fieldset {
-    margin: 1.5em; }
-
-form.justify fieldset {
-  margin: 1em 0 1.5em -2.5em;
-  padding: 1.5em;
-  border: 1px solid #ccc; }
-  form.justify fieldset label {
-    padding: 0;
-    margin: .5em -30% 0 .5em; }
-  form.justify fieldset fieldset {
-    margin: 1.5em; }
-form.justify label {
-  width: 30%;
-  display: inline-block;
-  margin: .5em -30.8% 0 0;
-  text-align: left;
-  color: #333; }
-form.justify input {
-  padding: .2em 0;
-  margin: 0.5em 0 0;
-  display: inline-block; }
-  form.justify input[type="text"]:focus,
-  form.justify input[type="password"]:focus {
-    border: 1px solid #FFCC66;
-    background: #FFF; }
-form.justify input[type="text"], form.justify input[type="password"] {
-  border: 1px solid #CCC;
-  background: #EEE;
-  margin: 0 0 0 30%;
-  width: 60%; }
-form.justify input[type="checkbox"] {
-  margin: 0 0 0 30%; }
-form.justify input[type="file"] {
-  border: 1px solid #CCC;
-  background: #EEE; }
-form.justify input[type="hidden"] {
-  height: 0;
-  width: 0;
-  margin: 0;
-  padding: 0; }
-form.justify input.clear {
-  clear: right;
-  display: block; }
-form.justify textarea {
-  border: 1px solid #CCC;
-  background: #EEE;
-  margin: 0 0 0 30%;
-  width: 60%;
-  height: 4em; }
-  form.justify textarea:focus {
-    background: #FFF;
-    border-color: #336699; }
-form.justify select {
-  margin: 0 0 0 30%; }
-
-ul li label,
-ol li label {
-  width: auto;
-  font-size: 1em; }
-
-div .multi_select,
-div .read_only {
-  margin: 0 0 0 30%;
-  display: inline-block; }
-  div .multi_select select,
-  div .read_only select {
-    margin: 0; }
-
-body.one_column #canvas .column {
-  width: 92em;
-  padding: 2em; }
-
-body.two_column #canvas .column {
-  width: 44em;
-  margin: 2em; }
-
-body.thirds #canvas .two_thirds {
-  width: 61em;
-  margin: 2em;
-  float: left; }
-  body.thirds #canvas .two_thirds.left {
-    margin-right: 1em; }
-body.thirds #canvas .one_third {
-  width: 29em;
-  margin: 2em;
-  float: left; }
-  body.thirds #canvas .one_third.right {
-    margin-left: 1em; }
+Backtrace:
+/home/dan/Projects/tenplate/www/public/stylesheets/sass/grid.sass:1
+/usr/lib/ruby/gems/1.8/gems/haml-2.0.6/lib/sass/engine.rb:338:in `parse_constant'
+/usr/lib/ruby/gems/1.8/gems/haml-2.0.6/lib/sass/engine.rb:289:in `parse_line'
+/usr/lib/ruby/gems/1.8/gems/haml-2.0.6/lib/sass/engine.rb:187:in `build_tree'
+/usr/lib/ruby/gems/1.8/gems/haml-2.0.6/lib/sass/engine.rb:116:in `render_to_tree'
+/usr/lib/ruby/gems/1.8/gems/haml-2.0.6/lib/sass/engine.rb:419:in `import'
+/usr/lib/ruby/gems/1.8/gems/haml-2.0.6/lib/sass/engine.rb:397:in `each'
+/usr/lib/ruby/gems/1.8/gems/haml-2.0.6/lib/sass/engine.rb:397:in `import'
+/usr/lib/ruby/gems/1.8/gems/haml-2.0.6/lib/sass/engine.rb:367:in `parse_directive'
+/usr/lib/ruby/gems/1.8/gems/haml-2.0.6/lib/sass/engine.rb:293:in `parse_line'
+/usr/lib/ruby/gems/1.8/gems/haml-2.0.6/lib/sass/engine.rb:187:in `build_tree'
+/usr/lib/ruby/gems/1.8/gems/haml-2.0.6/lib/sass/engine.rb:116:in `render_to_tree'
+/usr/lib/ruby/gems/1.8/gems/haml-2.0.6/lib/sass/engine.rb:88:in `render'
+/usr/lib/ruby/gems/1.8/gems/haml-2.0.6/lib/sass/plugin.rb:65:in `update_stylesheets'
+/usr/lib/ruby/gems/1.8/gems/haml-2.0.6/lib/sass/plugin.rb:53:in `each'
+/usr/lib/ruby/gems/1.8/gems/haml-2.0.6/lib/sass/plugin.rb:53:in `update_stylesheets'
+/usr/lib/ruby/gems/1.8/gems/haml-2.0.6/lib/sass/plugin/rails.rb:16:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+/usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+/usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Sass::SyntaxError: Invalid constant: \"!one column = !page_width/1.6180339887498948482em\".\A on line 1 of /home/dan/Projects/tenplate/www/public/stylesheets/sass/grid.sass\A \A 1: !one column = !page_width/1.6180339887498948482em\A 2: body.one_column\A 3:   #canvas\A 4:     .column\A 5:       :width= !grid_width -4em\A 6:       :padding 2em\A 7: \A "; }
