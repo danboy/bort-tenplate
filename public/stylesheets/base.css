@@ -125,11 +125,11 @@ form {
   form textarea,
   form select {
     font-family: inherit;
-    font-size: 1.4em;
+    font-size: 1.2em;
+    height: 1.6em;
     font-weight: inherit;
-    height: 1.4em;
-    line_height: 1.8em;
-    margin: 1.28571428571429em 0; }
+    margin: 1.28571428571429em 0;
+    border: 0.1em solid #336699; }
   form label {
     font-weight: bold;
     margin: 0 0 -1.28571428571429em; }
@@ -140,13 +140,12 @@ form {
     height: 1.8em; }
 
 fieldset {
-  margin: 1em 0 1.5em -1.5em;
-  padding: 1.5em;
+  margin: 1.28571428571429em 0 1.28571428571429em -1.5em;
+  padding: 1.8em;
   border: 1px solid #ccc; }
   fieldset legend {
     font-size: 1.4em;
-    font-weight: bold;
-    margin: -1.28571428571429em 0; }
+    font-weight: bold; }
   fieldset fieldset {
     margin: 1.5em; }
 

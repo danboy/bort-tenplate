@@ -6,11 +6,11 @@ form
   textarea,
   select
     :font-family inherit
-    :font-size 1.4em
+    :font-size 1.2em
+    :height= !line_height-.2em
     :font-weight inherit
-    :height 1.4em
-    :line_height= !line_height
     :margin= (!line_height/1.4em) 0
+    :border= .1em solid !link_color
   label
     :font-weight bold
     :margin= 0 0 (-(!line_height/1.4em))
@@ -21,13 +21,12 @@ form
     :height= !line_height
 
 fieldset
-  :margin 1em 0 1.5em -1.5em
-  :padding 1.5em
+  :margin= (!line_height/1.4em) 0 (!line_height/1.4em) (-1.5em)
+  :padding= !line_height
   :border 1px solid #ccc
   legend
     :font-size 1.4em
     :font-weight bold
-    :margin= -(!line_height/1.4em) 0
   fieldset
     :margin 1.5em
 

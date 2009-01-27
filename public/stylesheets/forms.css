@@ -1,25 +1,25 @@
 /*
 Sass::SyntaxError: Undefined constant: "!line_height".
-on line 12 of /home/dan/Projects/tenplate/www/public/stylesheets/sass/forms.sass
+on line 10 of /home/dan/Projects/tenplate/www/public/stylesheets/sass/forms.sass
 
+6:   textarea,
+7:   select
 8:     :font-family inherit
-9:     :font-size 1.4em
-10:     :font-weight inherit
-11:     :height 1.4em
-12:     :line_height= !line_height
-13:     :margin= (!line_height/1.4em) 0
+9:     :font-size 1.2em
+10:     :height= !line_height-.2em
+11:     :font-weight inherit
+12:     :margin= (!line_height/1.4em) 0
+13:     :border= .1em solid !link_color
 14:   label
 15:     :font-weight bold
 16:     :margin= 0 0 (-(!line_height/1.4em))
-17:   input[type="checkbox"]
-18:     :display inline-block
 
 
 Backtrace:
-/home/dan/Projects/tenplate/www/public/stylesheets/sass/forms.sass:12
+/home/dan/Projects/tenplate/www/public/stylesheets/sass/forms.sass:10
 /usr/lib/ruby/gems/1.8/gems/haml-2.0.6/lib/sass/constant.rb:209:in `get_constant'
 /usr/lib/ruby/gems/1.8/gems/haml-2.0.6/lib/sass/constant.rb:192:in `operationalize'
-/usr/lib/ruby/gems/1.8/gems/haml-2.0.6/lib/sass/constant.rb:182:in `operationalize'
+/usr/lib/ruby/gems/1.8/gems/haml-2.0.6/lib/sass/constant.rb:197:in `operationalize'
 /usr/lib/ruby/gems/1.8/gems/haml-2.0.6/lib/sass/constant.rb:45:in `parse'
 /usr/lib/ruby/gems/1.8/gems/haml-2.0.6/lib/sass/engine.rb:329:in `parse_attribute'
 /usr/lib/ruby/gems/1.8/gems/haml-2.0.6/lib/sass/engine.rb:282:in `parse_line'
@@ -68,4 +68,4 @@ script/server:3
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Sass::SyntaxError: Undefined constant: \"!line_height\".\A on line 12 of /home/dan/Projects/tenplate/www/public/stylesheets/sass/forms.sass\A \A 8:     :font-family inherit\A 9:     :font-size 1.4em\A 10:     :font-weight inherit\A 11:     :height 1.4em\A 12:     :line_height= !line_height\A 13:     :margin= (!line_height/1.4em) 0\A 14:   label\A 15:     :font-weight bold\A 16:     :margin= 0 0 (-(!line_height/1.4em))\A 17:   input[type=\"checkbox\"]\A 18:     :display inline-block\A "; }
+  content: "Sass::SyntaxError: Undefined constant: \"!line_height\".\A on line 10 of /home/dan/Projects/tenplate/www/public/stylesheets/sass/forms.sass\A \A 6:   textarea,\A 7:   select\A 8:     :font-family inherit\A 9:     :font-size 1.2em\A 10:     :height= !line_height-.2em\A 11:     :font-weight inherit\A 12:     :margin= (!line_height/1.4em) 0\A 13:     :border= .1em solid !link_color\A 14:   label\A 15:     :font-weight bold\A 16:     :margin= 0 0 (-(!line_height/1.4em))\A "; }
